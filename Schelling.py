@@ -171,8 +171,9 @@ class City(object):
                 assigns a home to each person (and assigns that
                     same person to that home.occupant variable)
         """
-
+        
         for group in range(self.ngroups):
+            self.person = person
             nhomes = len(self.homes)
             self.npeople = self.breakdown * nhomes
             for i in range(len(self.npeople)):
